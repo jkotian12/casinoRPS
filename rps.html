@@ -10,19 +10,14 @@
   <body id="body">
     <div class="table">
       <div class="house">
-        <div id="enemyChoice"></div>
+        
+        <button  id="enemyChoice"></button><br>
+        
+    
       </div>
       <div class="choicesContainer">
-        <button
-          position="left"
-          class="choice"
-          playerChoice="rock"
-        ></button>
-        <button
-          position="middle"
-          class="choice"
-          playerChoice="paper"
-        ></button>
+        <button position="left" class="choice" playerChoice="rock"></button>
+        <button  position="middle" class="choice" playerChoice="paper"></button>
         <button
           position="right"
           class="choice"
@@ -31,14 +26,32 @@
       </div>
     </div>
     <div class="nextContainer">
-    <button id="next">Next Hand</button>
-  </div>
-    <button id="reset">Reset</button>
-    <h1 id="header"></h1>
-    <span>
-      <h2 id="result"></h2>
-      <h2 id="score"></h2>
-    </span>
+      <button id="next">Next Hand</button>
+    </div>
+    <div class="info">
+      <h1>Rock Paper Scissors Casino</h1>
+    
+      <div>
+      <span>
+        <div class="result">
+          <h2 id="result"></h2>
+        </div>
+        <div class="scores">
+          <div class="casinoScore">
+            <h2 class="score" id="player1"></h2>
+            <h2 class="score" id="escore"></h2>
+          </div>
+          <div class="playerScore">
+            <h2 class="score" id="player2"></h2>
+            <h2 class="score" id="pscore"></h2>
+          </div>
+        </div>
+        <div class="resetHolder">
+        <button id="reset">Reset</button>
+      </div>
+      </div>
+      </span>
+    </div>
   </body>
   <script src="./app.js"></script>
 </html>
