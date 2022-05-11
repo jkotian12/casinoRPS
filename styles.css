@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(219, 91, 44);
+}
+
+
+.table{
+    width:90vw;
+    height: 90vh;
+    background-color: #008000;
+    border-radius: 50px;
+    border: 40px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.choicesContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#enemyChoice{
+    height: 210px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: white;
+    background-size: 150px 200px ;
+}
+.choice{
+    height: 190px;
+    width: 150px;
+    border-radius: 8px;
+    transition: all ease 1.5s;
+}
+
+.house{
+    display: flex;
+    justify-content: center;
+}
+
+button[playerChoice="rock"]{
+    background-image: url("./rock.jpg");
+    background-size: 150px 200px ;
+}
+
+button[playerChoice="paper"]{
+    background-image: url("./paper.jpg");
+    background-size: 150px 200px ;
+}
+
+button[playerChoice="scissors"]{
+    background-image: url("./scissors.jpg");
+    background-size: 150px 200px ;
+}
+
+.leftChosen{
+    transform: translate(100px, -190px);
+}
+
+.middleChosen{
+    transform: translate(0px, -190px);
+    background-image: url("./paper.jpg");
+}
+
+.rightChosen{
+    transform: translate(-100px, -190px);
+    background-image: url("./scissors.jpg");
+}
+
+.nextContainer{
+    display: flex;
+    justify-content: center;
+}
+
+#next{
+    display: none;
+    position: fixed;
+}
+
+.blurred{
+transition: all 4s ease;
+}
+
+

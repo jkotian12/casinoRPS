@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Rock Papers Scissors</title>
-</head>
-<body>
+  </head>
+  <body id="body">
+    <div class="table">
+      <div class="house">
+        <div id="enemyChoice"></div>
+      </div>
+      <div class="choicesContainer">
+        <button
+          position="left"
+          class="choice"
+          playerChoice="rock"
+        ></button>
+        <button
+          position="middle"
+          class="choice"
+          playerChoice="paper"
+        ></button>
+        <button
+          position="right"
+          class="choice"
+          playerChoice="scissors"
+        ></button>
+      </div>
+    </div>
+    <div class="nextContainer">
+    <button id="next">Next Hand</button>
+  </div>
+    <button id="reset">Reset</button>
     <h1 id="header"></h1>
     <span>
-    <h2 id="result"></h2><h2 id="score"></h2>
+      <h2 id="result"></h2>
+      <h2 id="score"></h2>
     </span>
-    <h3 id="enemyChoice"></h3>
-    <h3 id="playerChoice"></h3>
-    <button class="choice" playerChoice="Rock">Rock</button>
-    <button class="choice" playerChoice="Paper">Paper</button>
-    <button class="choice" playerChoice="Scissors">Scissors</button>
-    <br>
-    <button id="reset">Reset</button>    
-</body>
-<script src="./app.js"></script>
+  </body>
+  <script src="./app.js"></script>
 </html>
